@@ -28,8 +28,9 @@ const UserSchema = new mongoose.Schema({
     },
 
     salt: String
-    }
+}
 );
+
 
 UserSchema.virtual("password").set(function(password){
     this._password = password;
